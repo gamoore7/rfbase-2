@@ -1,0 +1,4 @@
+<resources>
+<!-- SPINUP-TODO: Rename the staging app -->
+    <string name="app_name">rfbasemobile-staging</string>
+</resources>

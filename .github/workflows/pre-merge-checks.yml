@@ -1,0 +1,14 @@
+name: Pre-merge Checks
+on:
+  pull_request:
+    branches: [ main ]
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Install packages and lint
+        run: |
+          yarn && yarn lint
+      # Add addtional pre-merge checks below
